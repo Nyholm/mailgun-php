@@ -69,6 +69,7 @@ class Message extends HttpApi
         $params['to'] = $recipients;
         $postDataMultipart = $this->prepareMultipartParameters($params);
 
+
         if (is_file($message)) {
             $fileData = ['filePath' => $message];
         } else {
